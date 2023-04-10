@@ -1,0 +1,43 @@
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #1f1f1f;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    border: 1px solid #3c3c3c;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: #ccc;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    align-items: flex-start;
+}
+
+.video-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.video-info p {
+    margin: 5px 0;
+    font-size: 14px;
+
+}
+#viewsAndTime{
+    display: flex;
+    flex-direction: row;
+}
