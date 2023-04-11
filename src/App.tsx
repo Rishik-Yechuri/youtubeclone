@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Sidebar from './Sidebar';
 import VideoList from './VideoList';
 import VideoPlayer from './VideoPlayer';
 
@@ -12,8 +11,7 @@ function App() {
                 <h6>YouTube Clone</h6>
             </header>
             <div className="App-content">
-                <Sidebar />
-                <main>
+                <main className={"main-content"}>
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<VideoList />} />
