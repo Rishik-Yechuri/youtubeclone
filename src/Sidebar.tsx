@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./Sidebar.css";
 
 const Sidebar: React.FC = () => {
@@ -41,7 +41,28 @@ const Sidebar: React.FC = () => {
                     <span className="label">Library</span>
                 </li>
                 {/* Add more items with custom SVG icons here */}
+                <li>
+                    <svg className="icon" viewBox="0 0 24 24">
+                        {/* Placeholder SVG path for the first custom icon */}
+                    </svg>
+                    <span className="label">Placeholder 1</span>
+                </li>
+                <li>
+                    <svg className="icon" viewBox="0 0 24 24">
+                        {/* Placeholder SVG path for the second custom icon */}
+                    </svg>
+                    <span className="label">Placeholder 2</span>
+                </li>
+                <li>
+                    <svg className="icon" viewBox="0 0 24 24">
+                        {/* Placeholder SVG path for the third custom icon */}
+                    </svg>
+                    <span className="label">Placeholder 3</span>
+                </li>
             </ul>
+            <div className="subscription-section">
+                {/* Add subscription items here */}
+            </div>
         </div>
     );
 };
